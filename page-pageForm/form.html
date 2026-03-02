@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>FORM:get,post</title>
+        <meta charset="UTF-8">
+        <meta name="viewport"  content="width=device-width,initial-scale=1.0">
+        <link rel="icon" href="image3.jpg" type="image/x-icon">
+    </head>
+    <body>
+         <form action="dashboard.html" method="get" >
+            <label for="username">Name:</label>
+            <input type="text" name="username" id="username">
+            <label >password
+            <input type="password"  name="password">
+            </label>
+            <h3>Gender</h3>
+            <label for="male">male</label>
+            <input type="radio" name="gender" value="male" id="male">
+            <label for="female">female</label>
+            <input type="radio" name="gender" value="female" id="female">
+            <div>
+            <label for="fruit">Select Fruits:</label>
+            <select name="fruit" id="fruit" multiple>
+                <option value="mango">mango</option>
+                <option value="banana">banana</option>
+            </select>
+            </div>
+            <div>
+            <button type="submit">Login</button>
+            <button type="reset">Reset</button>
+            </div>
+         </form>
+    </body>
+</html>

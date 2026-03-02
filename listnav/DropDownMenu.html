@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .menu {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu a {
+  text-decoration: none;
+}
+.submenu {
+  list-style: none;
+  padding: 10px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  background: #eee;
+}
+.menu li:hover .submenu {
+  display: block;
+}
+</style>
+<body>
+    <nav>
+        <ul class="menu">
+            <li><a href="#">HOME</a>
+            <li>
+                <a href="#">Services</a>
+                <ul class="submenu">
+                    <li><a href="#">WebDev</a></li>
+                    <li><a href="#">appDev</a></li>
+                    <li><a href="#">Seo</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>
