@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Login</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="../image3.jpg" type="image/x-icon">
+  </head>
+  <style>
+    *{
+  box-sizing:border-box;
+  }
+    body{
+        height: 100vh;
+        margin:0;
+        background-color: bisque;
+        font-family: Arial, Helvetica, sans-serif;
+        display:flex;
+        justify-content:center;
+        align-items: center;
+    }
+    
+    label{
+        display:block;
+        margin:6px;
+    }
+    input{
+        padding: 14px;
+        width:100%;
+        outline:none;
+        border:none;
+        border-bottom: 1px solid black;
+        margin-bottom: 15px;
+    }
+    input:focus{
+        border-bottom:1px solid purple;
+    }
+    button{
+       width: 100%; 
+       padding: 14px;
+       border-radius: 4px;
+       margin-bottom: 10px;
+       border:none;
+       background-color: rgb(185, 146, 221);
+       cursor: pointer;
+    }
+    button:hover{
+    background-color: rgb(170,130,210);
+}
+    h2{
+        text-align:center;
+        margin-bottom:20px;
+    }
+    footer{
+        text-align:center;
+    }
+    .wrapper{
+  display:flex;
+  width:700px;
+  height:400px;
+  background:white;
+  border-radius:12px;
+  overflow:hidden;
+  box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+.login-panel{
+        flex:1;
+        width:300px;
+        background-color:white;
+        box-shadow:0 10px 25px rgba(0,0,0,0.1);
+        padding: 20px 40px;
+        border-radius: 8px;
+}
+.design-panel{
+  flex:1;
+  background:linear-gradient(135deg,#8e2de2,#4a00e0);
+  color:white;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  position:relative;
+}
+.design-panel::before{
+  content:"";
+  position:absolute;
+  width:250px;
+  height:250px;
+  background:rgba(255,255,255,0.15);
+  border-radius:50%;
+   left:-60px;
+  bottom:-60px;
+}
+
+.design-panel::after{
+  content:"";
+  position:absolute;
+  width:200px;
+  height:200px;
+  background:rgba(255,255,255,0.15);
+  border-radius:50%;
+ top:-60px;
+  right:-60px;
+}
+.design-panel h2{
+  margin-bottom:20px;
+}
+
+.design-panel a{
+  opacity:0.9;
+  color:white;
+}
+
+  </style>
+  <body>
+       <div class="wrapper">
+
+  <div class="login-panel">
+      <div >
+           <header>
+                <h2>Login</h2>
+           </header>
+           <main>
+                <form>
+                    <label for="email">Email</label>
+                    <input id="email" type="email" name="username" placeholder="Enter your email">
+                    <label for="password">Password</label>
+                    <input id="password" type="password" name="password" placeholder="Enter your password">
+                    <button >Submit</button>
+                    
+                </form>
+           </main>
+           <footer>
+                <a href="#">Forgot Password?</a>
+           </footer>
+       </div>
+  </div>
+
+  <div class="design-panel">
+      <h2>Don't have an account</h2>
+      <a href="signup.html">Signup</a>
+  </div>
+
+</div>
+       
+  </body>
+</html>
